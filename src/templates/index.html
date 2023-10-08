@@ -1,9 +1,60 @@
-<title>Total calculate App</title>
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Font Awesome のスタイルシートを読み込む -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* スタイルを適用するフォーム要素 */
+        form {
+            text-align: center;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            width: 300px;
+            margin: 0 auto;
+            position: relative;
+        }
 
-<h1>
-    コイン画像をアップロードして合計金額を計算しよう
-</h1>
-<form method = post enctype = multipart/form-data>
-<p><input type = file name = filename>
-<input type = submit value = 判定>
-</form>
+        /* フォーム内のテキスト */
+        input[type="file"] {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #4CAF50; /* ボタンの背景色を緑に設定 */
+            color: white; /* テキスト色を白に設定 */
+            cursor: pointer; /* ホバー時にカーソルをポインターに設定 */
+        }
+
+        /* アップロードアイコンのスタイル */
+        .upload-icon {
+            font-size: 36px; /* アイコンのサイズを調整 */
+        }
+
+        /* ボタンスタイル */
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* ボタンのホバーエフェクト */
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>コイン画像をアップロードして合計金額を計算しよう</h1>
+    <form method="post" enctype="multipart/form-data">
+        <i class="fas fa-upload upload-icon"></i> <!-- アップロードアイコン -->
+        <input type="file" name="filename">
+        <br>
+        <input type="submit" value="判定">
+    </form>
+</body>
+</html>
