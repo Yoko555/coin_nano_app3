@@ -27,6 +27,8 @@ class Exp(MyExp):
         self.train_ann = "train.json"
         # name of annotation file for evaluation
         self.val_ann = "val.json"
+        self.num_classes = 6
+        self.max_epoch = 400
 
 
     def get_model(self, sublinear=False):

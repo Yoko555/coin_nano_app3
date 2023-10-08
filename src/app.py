@@ -18,7 +18,6 @@ from build import get_exp
 import tempfile
 
 # 設定ファイルのパス
-#config_path = './src/yolox_s_coin.py'
 config_path = './src/yolox_nano_coin.py'
 
 # Flask のインスタンスを作成
